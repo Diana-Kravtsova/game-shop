@@ -1,0 +1,36 @@
+@use 'colors';
+
+.Header {
+    width: 100%;
+    padding: 20px clamp(10px, 3vw, 50px);
+    display: grid;
+    grid-template-columns: 1fr 100fr 1fr;
+    gap: 10px;
+    background-color: colors.$bg;
+
+    .Logo {
+        padding: 6px;
+    }
+
+    .Button.Cart {
+        justify-self: flex-end;
+
+        > div {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: colors.$text;
+            color: colors.$bg;
+            border-radius: 10px;
+            transition: background-color 0.2s;
+        }
+
+        &:hover {
+            > div {
+                background-color: white;
+            }
+        }
+    }
+}

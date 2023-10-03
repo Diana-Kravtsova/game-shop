@@ -1,0 +1,6 @@
+.Home {
+    margin-inline: calc(clamp(10px, 3vw, 50px) + 8px);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+}
