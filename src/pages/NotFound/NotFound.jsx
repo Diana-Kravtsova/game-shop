@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Transition from '../../components/Transition';
 
 const duration = 3;
 
@@ -15,7 +16,7 @@ function NotFound() {
     }, [navigate]);
 
     return (
-        <motion.div className={'NotFound'}>
+        <Transition className={'NotFound'} direction="up" distance={100}>
             <h1>404</h1>
             <p>Page not found.</p>
             <div className={'Redirect'}>
@@ -26,7 +27,7 @@ function NotFound() {
                     animate={{width: '100%', transition: {duration}}}
                 />
             </div>
-        </motion.div>
+        </Transition>
     );
 }
 

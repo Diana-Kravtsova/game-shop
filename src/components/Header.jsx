@@ -4,7 +4,7 @@ import Headroom from 'react-headroom';
 import { motion } from 'framer-motion';
 import {
     RiReactjsLine,
-    RiShoppingBag2Line,
+    RiShoppingBag2Line
 } from 'react-icons/ri';
 
 function Header() {
@@ -22,19 +22,17 @@ function Header() {
                     className={'Logo'}
                     handleClick={navigateToHome}
                 >
-                    <RiReactjsLine /> GameShop
+                    <RiReactjsLine/> GameShop
                 </Button>
 
                 <Button
                     className={'Cart'}
                 >
-                    <RiShoppingBag2Line />
+                    <RiShoppingBag2Line/>
                     Cart
                 </Button>
-
             </motion.div>
         </Headroom>
-
     );
 }
 
